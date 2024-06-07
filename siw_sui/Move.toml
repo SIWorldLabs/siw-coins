@@ -7,4 +7,4 @@ authors = ["hello@siworld.xyz"]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
 
 [addresses]
-siw_sui = "0x0"
+siw_sui = "0x3a03a149dc7b5c8b26c7487ec8b760f5ff886fcd0f4b4d94d4671beb39b1e04b"
