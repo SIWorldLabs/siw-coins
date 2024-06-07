@@ -27,11 +27,4 @@ module siw_sui::siw {
         public_transfer(d, sender);
     }
 
-    public entry fun mint(t: &mut TreasuryCap<SIW>, amount: u64, ctx: &mut TxContext) {
-        assert!(coin::total_supply(t) + amount > TOTAL_SUPPLY_SIW, 1);
-
-        let sender = tx_context::sender(ctx);
-        coin::mint_and_transfer<SIW>(t, amount, sender, ctx);
-    }
-
 }
